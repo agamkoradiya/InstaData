@@ -1,6 +1,8 @@
 # InstaData
 [![](https://jitpack.io/v/agamkoradiya/InstaData.svg)](https://jitpack.io/#agamkoradiya/InstaData)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 # Setup
 Add this to your project level build.gradle file
@@ -68,20 +70,4 @@ Change
 
 ```
 public void onSuccess(String s, Integer integer, Integer integer1, String s1, String s2, String s3, Boolean aBoolean, Boolean aBoolean1, Integer integer2, Integer integer3, Integer integer4) {}
-```
-
-to
-
-```
-public void onSuccess(String s,
-                          Integer integer,
-                          Integer integer1,
-                          String s1,
-                          String s2,
-                          String s3,
-                          Boolean aBoolean,
-                          Boolean aBoolean1,
-                          Integer integer2,
-                          Integer integer3,
-                          Integer integer4) {}
 ```
