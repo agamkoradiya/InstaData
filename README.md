@@ -24,6 +24,8 @@ Add this to your module level build.gradle file
 
 # How to use?
 
+# Kotlin
+
 ```
         InstaProfile.getInfo(this, "userName", object : InstaProfileListener {
             override fun onError(error: String?) {
@@ -45,4 +47,41 @@ Add this to your module level build.gradle file
 
         })
         
-   ```
+```
+
+# Java
+
+```
+InstaProfile.Companion.getInfo(this, "coding_boy_", new InstaProfileListener() {
+            @Override
+            public void onSuccess(String s, Integer integer, Integer integer1, String s1, String s2, String s3, Boolean aBoolean, Boolean aBoolean1, Integer integer2, Integer integer3, Integer integer4) {
+                
+            }
+
+            @Override
+            public void onError(String s) {
+
+            }
+        });
+```
+Change 
+
+```
+public void onSuccess(String s, Integer integer, Integer integer1, String s1, String s2, String s3, Boolean aBoolean, Boolean aBoolean1, Integer integer2, Integer integer3, Integer integer4) {}
+```
+
+to
+
+```
+public void onSuccess(String s,
+                          Integer integer,
+                          Integer integer1,
+                          String s1,
+                          String s2,
+                          String s3,
+                          Boolean aBoolean,
+                          Boolean aBoolean1,
+                          Integer integer2,
+                          Integer integer3,
+                          Integer integer4) {}
+```
