@@ -66,8 +66,14 @@ InstaProfile.Companion.getInfo(this, "coding_boy_", new InstaProfileListener() {
             }
         });
 ```
-Change 
+# Change 
 
 ```
 public void onSuccess(String s, Integer integer, Integer integer1, String s1, String s2, String s3, Boolean aBoolean, Boolean aBoolean1, Integer integer2, Integer integer3, Integer integer4) {}
+```
+
+to
+
+```
+public void onSuccess(String full_name, Integer followers, Integer following, String profile_pic_url_hd, String biography, String external_url, Boolean is_private, Boolean is_verified, Integer total_media_timeline, Integer total_video_timeline, Integer highlight_count) {}
 ```
