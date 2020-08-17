@@ -1,0 +1,3 @@
+include ':instalibrary'
+include ':app'
+rootProject.name = "InstaData"
